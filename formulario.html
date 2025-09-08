@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario - Capacidad de Emprendimiento</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <header>
+        <img src="img/logo-unad.png" alt="Logo UNAD" class="logo">
+        <img src="img/logo-ecbti.png" alt="Logo ECBTI" class="logo">
+        <h1>Formulario - Capacidad de Emprendimiento</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="formulario.html">Formulario</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Autoevaluación de tu capacidad innovadora</h2>
+        <form id="formEmprendimiento">
+            <p>1. ¿Te consideras una persona creativa?</p>
+            <label><input type="radio" name="preg1" value="20"> Sí</label>
+            <label><input type="radio" name="preg1" value="10"> A veces</label>
+            <label><input type="radio" name="preg1" value="0"> No</label>
+
+            <p>2. ¿Te gusta asumir riesgos calculados?</p>
+            <label><input type="radio" name="preg2" value="20"> Sí</label>
+            <label><input type="radio" name="preg2" value="10"> A veces</label>
+            <label><input type="radio" name="preg2" value="0"> No</label>
+
+            <p>3. ¿Trabajas bien en equipo?</p>
+            <label><input type="radio" name="preg3" value="20"> Sí</label>
+            <label><input type="radio" name="preg3" value="10"> A veces</label>
+            <label><input type="radio" name="preg3" value="0"> No</label>
+
+            <p>4. ¿Tienes iniciativa para emprender proyectos?</p>
+            <label><input type="radio" name="preg4" value="20"> Sí</label>
+            <label><input type="radio" name="preg4" value="10"> A veces</label>
+            <label><input type="radio" name="preg4" value="0"> No</label>
+
+            <button type="button" onclick="calcularResultado()">Calcular</button>
+        </form>
+
+        <div id="resultado"></div>
+    </main>
+
+    <footer>
+        <p>UNAD - Escuela de Ciencias Básicas, Tecnología e Ingeniería ECBTI © 2025</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

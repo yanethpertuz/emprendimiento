@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>OVI - Emprendimiento en Colombia</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <!-- Librería Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <img src="img/logo-unad.png" alt="Logo UNAD" class="logo-left">
+        <img src="img/logo-ecbti.png" alt="Logo ECTBI" class="logo">
+        <h1>OVI - Emprendimiento en Colombia</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="formulario.html">Formulario</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Sección de introducción -->
+        <section class="portada">
+            <h2>Introducción</h2>
+            <p>
+                El emprendimiento en Colombia es motor de desarrollo económico, innovación y generación de empleo.
+                Este OVI busca motivar a la comunidad estudiantil a conocer más sobre la capacidad innovadora y emprendedora en el país.
+            </p>
+            <img src="img/emprendimiento.png" alt="Emprendimiento en Colombia">
+        </section>
+
+        <!-- Sección de gráficos -->
+        <section class="graficos">
+            <h2>Gráficos Interactivos</h2>
+
+            <div class="card">
+                <h3>Capacidad de emprendimiento femenino</h3>
+                <canvas id="graficoBarras" width="400" height="200"></canvas>
+            </div>
+
+            <div class="card">
+                <h3>Tipos de emprendimiento en Colombia</h3>
+                <canvas id="graficoTorta" width="400" height="200"></canvas>
+            </div>
+
+            <div class="card">
+                <h3>Tendencia de innovación en el mundo</h3>
+                <canvas id="graficoLineas" width="400" height="200"></canvas>
+            </div>
+
+            <div class="card">
+                <h3>Comparación entre emprendimiento e innovación</h3>
+                <canvas id="graficoArea" width="400" height="200"></canvas>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 OVI Emprendimiento - Grupo colaborativo</p>
+    </footer>
+
+    <!-- Script de gráficos -->
+    <script src="js/script.js"></script>
+</body>
+</html>
