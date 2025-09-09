@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OVI - Emprendimiento en Colombia</title>
     <link rel="stylesheet" href="css/estilos.css">
     <!-- Librería Chart.js -->
@@ -9,9 +10,11 @@
 </head>
 <body>
     <header>
-        <img src="img/logo-unad.png" alt="Logo UNAD" class="logo-left">
-        <img src="img/logo-ecbti.png" alt="Logo ECTBI" class="logo">
-        <h1>OVI - Emprendimiento en Colombia</h1>
+        <div class="header-container">
+            <img src="img/logo-unad.png" alt="Logo UNAD" class="logo-left">
+            <h1>OVI - Emprendimiento en Colombia</h1>
+            <img src="img/logo-ecbti.png" alt="Logo ECBTI" class="logo-right">
+        </div>
         <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
@@ -37,22 +40,22 @@
 
             <div class="card">
                 <h3>Capacidad de emprendimiento femenino</h3>
-                <canvas id="graficoBarras" width="400" height="200"></canvas>
+                <canvas id="graficoBarras"></canvas>
             </div>
 
             <div class="card">
                 <h3>Tipos de emprendimiento en Colombia</h3>
-                <canvas id="graficoTorta" width="400" height="200"></canvas>
+                <canvas id="graficoTorta"></canvas>
             </div>
 
             <div class="card">
                 <h3>Tendencia de innovación en el mundo</h3>
-                <canvas id="graficoLineas" width="400" height="200"></canvas>
+                <canvas id="graficoLineas"></canvas>
             </div>
 
             <div class="card">
                 <h3>Comparación entre emprendimiento e innovación</h3>
-                <canvas id="graficoArea" width="400" height="200"></canvas>
+                <canvas id="graficoArea"></canvas>
             </div>
         </section>
     </main>
