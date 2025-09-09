@@ -14,6 +14,7 @@ new Chart(ctxBarras, {
     },
     options: {
         responsive: true,
+        maintainAspectRatio: true, // 🔹 mantiene proporciones correctas
         plugins: {
             legend: { position: "top" },
             title: { display: true, text: "Capacidad de emprendimiento femenino" }
@@ -37,8 +38,9 @@ new Chart(ctxTorta, {
     },
     options: {
         responsive: true,
+        maintainAspectRatio: true,
         plugins: {
-            legend: { position: "right" },
+            legend: { position: "bottom" }, // 🔹 abajo para móviles
             title: { display: true, text: "Tipos de emprendimiento en Colombia" }
         }
     }
@@ -62,6 +64,7 @@ new Chart(ctxLineas, {
     },
     options: {
         responsive: true,
+        maintainAspectRatio: true,
         plugins: {
             title: { display: true, text: "Tendencia de innovación en el mundo" }
         }
@@ -97,6 +100,7 @@ new Chart(ctxArea, {
     },
     options: {
         responsive: true,
+        maintainAspectRatio: true,
         plugins: {
             title: { display: true, text: "Comparación entre emprendimiento e innovación" }
         }
